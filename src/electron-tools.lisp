@@ -55,7 +55,7 @@ system, architecture.")
   "The pathname to the Electron binary inside the directory it was extracted to."
   (merge-pathnames (case operating-system
                      (:linux #p"electron")
-                     (:mac #p"Electron.app/Contents/MacOS/Electron")
+                     (:mac #p"Electron")
                      (:windows #p"electron.exe")
                      (t (error "Unsupported operating system.")))
                    directory))
